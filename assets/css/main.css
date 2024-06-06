@@ -2590,6 +2590,8 @@ input, select, textarea {
 
 	.image {
 		border: 0;
+		overflow:auto; 
+
 		display: inline-block;
 		position: relative;
 	}
@@ -4748,7 +4750,7 @@ h2{
 			width: 100%;
 		}
 
-	.spotlights > section > .content {
+	 section > .content {
 		padding: 4em 5em 2em 5em ;
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -4766,7 +4768,7 @@ h2{
 		-ms-flex: 1;
 	}
 
-		.spotlights > section > .content > .inner {
+		section > .content > .inner {
 			-moz-transform: translateX(0) translateY(0);
 			-webkit-transform: translateX(0) translateY(0);
 			-ms-transform: translateX(0) translateY(0);
@@ -4855,3 +4857,42 @@ h2{
 	.diploma-title {
 		text-align: right;
 	}
+
+
+
+	@media screen and (max-width: 1680px) {
+		.img{
+			padding-top: 20%;
+		}
+	}
+
+	@media screen and (max-width: 980px) {
+		.img{
+			display: block;
+			margin: 0 auto;
+			max-width: 600px;
+			width: 100%;
+			height: 100%;
+			padding: 0;
+		}
+
+	}
+	@media screen and (max-width: 736px) {
+		.img{
+			display: block;
+			margin: 0 auto;
+			max-width: 350px;
+			max-height: 300px;
+			width: 100%;
+			height: 100%;
+			padding: 0;
+		}
+
+	}
+
+.btn-center{
+	margin-left: 100%;
+}
+.education_section{
+	display: flex;
+}
