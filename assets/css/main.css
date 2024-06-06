@@ -2690,7 +2690,11 @@ input, select, textarea {
 		margin-left: -1rem;
 		padding-left: 0;
 	}
-
+	@media screen and (max-width: 1300px) {
+		ul.actions{
+			justify-content: space-evenly
+		}
+	}
 		ul.actions li {
 			padding: 0 0 0 1rem;
 			vertical-align: middle;
@@ -3237,7 +3241,7 @@ input, select, textarea {
 			height: 100%;
 			background-color: #212931;
 			background-image: url("../../images/personal_website_bg_img_13.jpg"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
-			filter: blur(5px); /* Adjust the blur intensity as per your requirement */
+			filter: blur(0px); /* Adjust the blur intensity as per your requirement */
 			background-size: cover,								auto,														100% auto;
 			background-position: center,								center,														top center;
 			background-repeat: no-repeat,								no-repeat,													no-repeat;
@@ -4896,3 +4900,11 @@ h2{
 .education_section{
 	display: flex;
 }
+
+@media screen and (max-width: 736px) {
+	/* input[type="submit"]{
+		display: flex;
+		
+	} */
+}
+
