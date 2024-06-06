@@ -3240,12 +3240,12 @@ input, select, textarea {
 			width: 100%;
 			height: 100%;
 			background-color: #212931;
-			background-image: url("../../images/personal_website_bg_img_13.jpg"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
-			filter: blur(0px); /* Adjust the blur intensity as per your requirement */
-			background-size: cover,								auto,														100% auto;
-			background-position: center,								center,														top center;
-			background-repeat: no-repeat,								no-repeat,													no-repeat;
-			background-attachment: scroll,								scroll,														scroll;
+			background-image: url("../../images/personal_website_bg_img_13.jpg");
+			filter: blur(0px); 
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-attachment: scroll;
 			z-index: -1;
 		}
 
