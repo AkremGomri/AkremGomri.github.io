@@ -290,7 +290,7 @@ input:nth-of-type(7):checked ~ #paragraph-container .paragraphe:nth-of-type(7) {
   }
   
   #main > input[type="radio"]{
-    transform: translateY(calc(-60vh + 20vw)); 
+    transform: translateY(calc(-50vh + 20vw)); 
   }
 
   input:nth-of-type(1):checked ~ #paragraph-container .paragraphe:nth-of-type(1),
@@ -303,6 +303,6 @@ input:nth-of-type(7):checked ~ #paragraph-container .paragraphe:nth-of-type(7) {
     display: block;
     font-size: 0.8em;
     width: 70vw;
-    transform: translate(-12rem, -13rem); 
+    transform: translate(-12rem, -6rem); 
   }
 }
