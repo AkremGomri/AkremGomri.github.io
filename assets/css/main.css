@@ -3240,7 +3240,7 @@ input, select, textarea {
 			height: 100%;
 			background-color: #212931;
 			background-image: url("../../images/personal_website_bg_img_13.jpg");
-			filter: blur(0px);
+			filter: blur(0px); /* Adjust the blur intensity as per your requirement */
 			background-size: cover;
 			background-position: center;
 			background-repeat: no-repeat;

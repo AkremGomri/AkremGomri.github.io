@@ -1,0 +1,118 @@
+
+:root {
+    --personal-information-line-weight: 35px;
+    --date-and-place-span-font-size: smaller; 
+  }
+
+#main{
+    padding: 5em;
+}
+
+#main > *{
+    border-top: none;
+    padding: 2rem 4rem 2rem 4rem;
+} 
+
+h2{
+    border-bottom: 2px #383838 solid;
+}
+
+a{
+    border: 0px;
+}
+
+.resume-sections, .resume-sections>*{
+    text-align: left;
+}
+
+.bold-text{
+    font-weight: bold;
+}
+
+.italic-text{
+    font-style: italic;
+}
+
+.txt-lt{
+    font-weight: lighter;
+}
+
+.txt-bld{
+    font-weight: bold;
+}
+
+.txt-sm{
+    font-size: small;
+}
+
+.txt-lg{
+    font-size: 1.5em;
+}
+
+.txt-center{
+    text-align: center;
+}
+.txt-right{
+    text-align: right;
+}
+
+.li-dash{
+    list-style-type: "-";
+}
+
+.no-list-style-type{
+    list-style-type: none;
+}
+
+.sticky{
+    position: sticky;
+    text-align: end;
+    top: 5em;
+}
+
+.absolute{
+    position: absolute;
+    top: 0em;
+    left: 55vw;
+}
+
+.bt-0{
+    bottom: 0;
+}
+
+.r-8{
+    right: 8em;
+}
+
+.border-t-0{
+    border-top: none !important;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-side-flex{
+    width: 45vw;
+}
+
+
+#coordinates{
+    
+    line-height: var(--personal-information-line-weight);
+    margin-left: 15px;
+}
+
+#coordinates > h3{
+    margin-bottom: 0px;
+}
+
+#personal-contact {
+    line-height: var(--personal-information-line-weight);
+}
+
+.date-and-place{
+    font-size: var(--date-and-place-span-font-size);
+
+}
