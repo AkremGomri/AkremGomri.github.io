@@ -12,6 +12,12 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!-- <link rel="stylesheet" href="assets/css/certifications.css" /> -->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			  .required:after {
+				content:" *";
+				color: red;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -45,7 +51,7 @@
 				<footer id="footer">
 					<section>
 						<h2 class="">Give feedback</h2>
-						<form method="post" action="#">
+						<form method="post" action="https://formspree.io/f/myzgynyr">
 							<div class="fields">
 								<div class="field">
 									<label for="name">Name</label>
@@ -56,8 +62,8 @@
 									<input type="text" name="email" id="email" />
 								</div>
 								<div class="field">
-									<label for="message">Message</label>
-									<textarea name="message" id="message" rows="3"></textarea>
+									<label for="message" class="required">Message</label>
+									<textarea name="message" id="message" rows="3" required></textarea>
 								</div>
 							</div>
 							<ul class="actions">

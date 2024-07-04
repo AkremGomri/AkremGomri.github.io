@@ -70,6 +70,12 @@ a{
     top: 5em;
 }
 
+.fixed{
+    position: fixed;
+    text-align: end;
+    /* top: 5em; */
+}
+
 .absolute{
     position: absolute;
     top: 0em;
@@ -77,7 +83,7 @@ a{
 }
 
 .bt-0{
-    bottom: 0;
+    bottom: 0em;
 }
 
 .r-8{
@@ -115,4 +121,64 @@ a{
 .date-and-place{
     font-size: var(--date-and-place-span-font-size);
 
+}
+
+@media screen and (max-width: 992px) {
+    .lg-no-show{
+        display: none;
+    }
+    .lg-container-grid{
+        display: grid;
+    }
+
+    .left-side-flex{
+        width: 60vw;
+    }
+    
+    #main > *{
+        padding: 1rem 0;
+    }
+
+    #main{
+        padding:3em;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .md-no-show{
+        display: none;
+    }
+    .md-container-grid{
+        display: grid;
+    }
+
+    .left-side-flex{
+        width: 85vw;
+    }
+    
+    #main > *{
+        padding: 1rem 0;
+    }
+
+    #main{
+        padding:3em;
+        width: 100%;
+    }
+
+    .image{
+        display: none;
+    }
+}
+
+.col-12{
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.pos-1-4{
+    grid-column: 1/4;
+}
+
+.pos-1-4{
+    grid-column: 1/4;
 }
