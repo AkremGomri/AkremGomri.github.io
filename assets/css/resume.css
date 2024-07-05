@@ -141,7 +141,7 @@ a{
 
     #main{
         padding:3em;
-        width: 100%;
+        /* width: 100%; */
     }
 }
 
@@ -163,7 +163,7 @@ a{
 
     #main{
         padding:3em;
-        width: 100%;
+        /* width: 100%; */
     }
 
     .image{
@@ -181,4 +181,41 @@ a{
 
 .pos-1-4{
     grid-column: 1/4;
+}
+
+@media screen and (max-width: 600px) {
+    #intro{
+        height: 10vh;
+        padding-top: 0;
+    }
+
+    #header{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    #personal-information, #personal-contact{
+        display: block;
+        text-align: center;
+        width: 80vw;
+    }
+    .flex{
+        display: block;
+    }
+    #main{
+        padding:3em;
+        width: 100%;
+    }
+
+    #intro{
+        height: 20vh;
+    }
+}
+
+#download-icon{
+    box-sizing: border-box;
+    position: fixed;
+    right:8%;
+
 }

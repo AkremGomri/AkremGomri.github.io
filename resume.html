@@ -64,12 +64,7 @@
                                 <img src="/images/click-to-download-btn.jpeg" width="120px" alt="">
                             </a>
                         </div> -->
-                        <div id="download-icon" class="txt-right r-8 bt-0 border-t-0 fixed" style="margin-right: 2em;">
-                            <a href="/assets/files/Data_Scientist_Resume__ENG.pdf" download>
-                                <img src="/images/click-to-download-btn-removebg-preview.png" width="50px" alt="">
-                                <!-- <input type="button" value="click to download"> -->
-                            </a>
-                        </div>
+
                         <h1 style="text-align: center;">Resume</h1>
                         
                         <div id="personal-information" class="flex">
@@ -340,6 +335,13 @@
                                     </span>
                                 </div>
                             </ul>
+
+                            <div id="download-icon" class="txt-right bt-0 border-t-0 fixed" style="margin-right: 2em;">
+                                <a href="/assets/files/Data_Scientist_Resume__ENG.pdf" download>
+                                    <img src="/images/click-to-download-btn-removebg-preview.png" width="50px" alt="">
+                                    <!-- <input type="button" value="click to download"> -->
+                                </a>
+                            </div>
                         </div>
 						<!-- Footer -->
 							<footer>
@@ -383,20 +385,45 @@
         main_div_height = main_div.offsetHeight;
 
         download_icon_default_display = download_icon.style.display;
+        download_icon_default_position = "fixed";
         download_icon.style.display = "none";
         
         document.addEventListener("scroll", (event) => {
             lastKnownScrollPosition = window.scrollY;
 
-            if((lastKnownScrollPosition > main_div_height + 50) || (lastKnownScrollPosition<150)){
-                console.log("wsolna");
+            if((window.innerWidth < 769) ){
+                download_icon.style.display = download_icon_default_display;
+                download_icon.style.position = "static";
+            }
+            else if((lastKnownScrollPosition > main_div_height - 20) || (lastKnownScrollPosition<100)){
                 download_icon.style.display = "none";
+                download_icon.style.position = download_icon_default_position;
             } else {
                 download_icon.style.display = download_icon_default_display;
+                download_icon.style.position = download_icon_default_position;
+
             }
-            console.log("lastKnownScrollPosition : ",lastKnownScrollPosition );
-            // console.log("document.scrollHeight",document.scrollHeight);
+
         });
+
+
+        function place_download_icon_right(){
+            main_div_offsetRight = window.innerWidth - main_div.offsetLeft - main_div.offsetWidth;
+            console.log("window.innerWidth: ",window.innerWidth);
+            // console.log("window.innerWidth: ",window.innerWidth);
+            console.log("main_div_offsetRight : ",main_div_offsetRight );
+            if(window.innerWidth > 993){
+                download_icon.style.right = (main_div_offsetRight - 10) +"px";
+                console.log("if download_icon.style.right : ",download_icon.style.right );
+            } else {
+                download_icon.style.right = (main_div_offsetRight ) + "px"
+                console.log("else download_icon.style.right : ",download_icon.style.right );
+            }
+        }
+
+        place_download_icon_right()
+        window.addEventListener("resize", place_download_icon_right)
+
 
 
     </script>

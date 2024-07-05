@@ -290,9 +290,31 @@ h3{
 
   .paragraphe{
     font-size: 0.8em;
-    width: 70vw;
+    width: 80vw !important;
     transform: translate(-12rem, -10rem); 
   }
+}
+
+@media screen and (max-width: 490px) {
+  .credentials-link > button{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .paragraphe{
+    /* grid-column: 1 / 6 !important; */
+    padding: 0 !important;
+  }
+
+  #paragraph-container{
+    padding: 0;
+  }
+
+  
 }
 
 .credentials-link{
