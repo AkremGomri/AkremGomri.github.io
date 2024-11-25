@@ -1,0 +1,41 @@
+:root {
+    --primary-color: #b62e3c;  /* Primary color */
+    --secondary-color: #792106; /* Secondary color */
+    --text-color: #333333;      /* Text color */
+    --background-color: #F9F9F9; /* Background color */
+  }
+
+#main {
+    display: grid;
+}
+
+/* #main > * {
+    border-top: solid 0px #eeeeee;
+} */
+
+.rs{
+    all: unset;
+}
+.center{
+    display: grid;
+    justify-self: center; /* Horizontal alignment */
+    align-self: center;   /* Vertical alignment */
+}
+
+.h1{
+    display: block;
+    color: var(--primary-color);
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.h2{
+    display: block;
+    color: var(--secondary-color);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.B{
+    font-weight: bold;
+}

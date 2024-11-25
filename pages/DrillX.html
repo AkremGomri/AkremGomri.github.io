@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Education - Akrem Gomri's Personal Website</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/DrillX.css">
+    <noscript>
+        <link rel="stylesheet" href="../assets/css/noscript.css">
+    </noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <a href="../index.html" class="logo">Akrem's Personal Website</a>
+        </header>
+
+        <!-- Navigation -->
+        <nav id="nav">
+            <ul class="links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../experience.html">Experience</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../education.html">Education</a></li>
+                <li><a href="../certifications.html">Certifications</a></li>
+                <li><a href="../resume.html">Resume</a></li>
+                <li><a href="../contact_me.html">Contact Me</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/akrem-gomri/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://github.com/AkremGomri" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div id="main">
+            <h1 class="rs center h1">Drill-X Project</h1>
+
+            <!-- Project Context -->
+            <section>
+                <h2 class="rs h2">Project Context:</h2>
+                <p>The project aims to detect anomalies (stuck events) occurring during drilling, which cost the company tens of millions of dollars annually. An existing solution has been in place for years, but it has recently struggled with false alarms and missed detections.</p>
+                <p><strong>Data Type:</strong> Time-series data, typically sensor data such as the hook load of the drilling rig.</p>
+            </section>
+
+            <!-- Mission -->
+            <section>
+                <h2 class="rs h2">My Mission:</h2>
+                <p>The TotalEnergies Digital Factory (TDF) team decided to address the project's challenges academically by exploring a new technique: soft-labeling. My mission was to implement and evaluate approaches using soft-labeled data, where labels represent probabilities instead of binary values (0 or 1). This required extensive research, including reviewing state-of-the-art papers and applying advanced techniques.</p>
+            </section>
+
+            <!-- Challenges -->
+            <section>
+                <h2 class="rs h2">Project Challenges:</h2>
+                <ul>
+                    <li><strong>Data imbalance:</strong> The dataset is highly imbalanced, with normal data vastly outnumbering anomaly events.</li>
+                    <li><strong>Unfiltered activity data:</strong> Collected data includes both activity and non-activity data, increasing complexity.</li>
+                    <li><strong>Uncertainty in stuck reporting:</strong> Stuck events are recorded, but the exact timing is often unclear.</li>
+                    <li><strong>Pattern ambiguity:</strong> Near-stuck patterns complicate detection, as some events are resolved before becoming actual stucks.</li>
+                </ul>
+            </section>
+
+            <!-- Assets -->
+            <section>
+                <h2 class="rs h2">Project Assets:</h2>
+                <ul>
+                    <li><strong>Significance:</strong> The project is crucial for the company's core activities, saving substantial costs while enhancing its AI capabilities.</li>
+                    <li><strong>Resources:</strong> Well-documented processes and access to cutting-edge tools, including distributed computing on Azure Databricks and MLflow for model tracking.</li>
+                </ul>
+            </section>
+
+            <!-- Achievements -->
+            <section>
+                <h2 class="rs h2">Achievements:</h2>
+                <ol>
+                    <li>Applied K-Means and DBSCAN clustering on signal features extracted with Tsfresh to group similar patterns.</li>
+                    <li>Trained a neural network on features extracted by Tsfresh. The model faced challenges with dimensionality and parameter updates.</li>
+                    <li>Developed and tested a Temporal Convolutional Network (TCN) for stuck prediction, reducing false alarms but with room for improvement.</li>
+                </ol>
+            </section>
+
+            <!-- Timeline -->
+            <section>
+                <h2 class="rs h2">Timeline:</h2>
+                <img src="../images/drill-x_project_progress_timeline.png" width="100%" alt="Project Timeline">
+                <ul>
+                    <li><strong>First Month:</strong> Explored the project context, reviewed research papers, and conducted initial analyses.</li>
+                    <li><strong>Second Month:</strong> Developed the first approach using Tsfresh for feature extraction and clustering with K-Means and DBSCAN.</li>
+                    <li><strong>Third Month:</strong> Trained neural networks, including a Temporal Convolutional Network, on extracted features.</li>
+                </ul>
+            </section>
+
+            <!-- Tools and Experience -->
+            <section>
+                <h2 class="rs h2">Tools and Experience:</h2>
+                <ul>
+                    <li><strong>Data Manipulation & Analysis:</strong> Pandas, NumPy</li>
+                    <li><strong>Big Data & Distributed Computing:</strong> Apache Spark, Databricks</li>
+                    <li><strong>Machine Learning & Deep Learning:</strong> PyTorch, MLflow</li>
+                    <li><strong>Data Visualization:</strong> Matplotlib</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
