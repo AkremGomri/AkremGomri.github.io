@@ -6,7 +6,7 @@ main {
   /* height: 600px; */
   /* margin: 0; */
   display: grid;
-  grid-template-rows: 100px 500px 150px 40px 300px;
+  grid-template-rows: 100px 700px 50px 300px 300px;
   grid-template-columns: 1fr repeat(13, 20px) 1fr;
   align-items: center;
   justify-items: center;
