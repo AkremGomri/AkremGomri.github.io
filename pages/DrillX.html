@@ -78,9 +78,11 @@
             <section>
                 <h2 class="rs h2">Achievements:</h2>
                 <ol>
-                    <li>Applied K-Means and DBSCAN clustering on signal features extracted with Tsfresh to group similar patterns.</li>
-                    <li>Trained a neural network on features extracted by Tsfresh. The model faced challenges with dimensionality and parameter updates.</li>
-                    <li>Developed and tested a Temporal Convolutional Network (TCN) for stuck prediction, reducing false alarms but with room for improvement.</li>
+                    <li>Segmented sensor signals into windows, extracted hundreds of features with TSFRESH, and clustered them using DBSCAN to identify pre-stuck patterns.</li>
+                    <li>Designed the project's foundation, including model architecture, training pipeline, preprocessing strategies, and loss function selection for stuck detection.</li>
+                    <li>Developed and tested a Temporal Convolutional Network (TCN) to learn pre-stuck patterns through CNN filters, successfully detecting a stuck event across multiple experiments.</li>
+                    <li>Implemented a MAT-GAT, a graph attention-based approach for stuck detection, designed to capture both sensor relationships and temporal dependencies.</li>
+                    <li>Defined key evaluation metrics and developed a graphical visualization pipeline to interpret and compare model performance.</li>
                 </ol>
             </section>
 
@@ -90,8 +92,11 @@
                 <img src="../images/drill-x_project_progress_timeline.png" width="100%" alt="Project Timeline">
                 <ul>
                     <li><strong>First Month:</strong> Explored the project context, reviewed research papers, and conducted initial analyses.</li>
-                    <li><strong>Second Month:</strong> Developed the first approach using Tsfresh for feature extraction and clustering with K-Means and DBSCAN.</li>
-                    <li><strong>Third Month:</strong> Trained neural networks, including a Temporal Convolutional Network, on extracted features.</li>
+                    <li><strong>Second Month:</strong> Developed the initial approach using TSFRESH for feature extraction, followed by clustering with K-Means and DBSCAN to identify pre-stuck patterns.</li>
+                    <li><strong>Third Month:</strong> Project's foundation design, and TCN model implementation.</li>
+                    <li><strong>Fourth Month:</strong> MAT-GAT implementation and integration, and models testing.</li>
+                    <li><strong>Fifth Month:</strong> Result analysis & discussions, Report writing, and project presentation.</li>
+                    <li><strong>Sixth Month:</strong> Tested the model's sensitivity to various data modifications to analyze its behavior and robustness. Worked on project documentation.</li>
                 </ul>
             </section>
 
