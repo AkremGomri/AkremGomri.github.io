@@ -1,0 +1,309 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Projects - Akrem Gomri's Personal Website</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/DrillX.css">
+    <link rel="stylesheet" href="../assets/css/project-music-artist.css">
+    <noscript>
+        <link rel="stylesheet" href="../assets/css/noscript.css">
+    </noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <a href="../index.html" class="logo">Akrem's Personal Website</a>
+        </header>
+
+        <!-- Navigation -->
+        <nav id="nav">
+            <ul class="links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../education.html">Education</a></li>
+                <li><a href="../experience.html">Experience</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../certifications.html">Certifications</a></li>
+                <li><a href="../resume.html">Resume</a></li>
+                <li><a href="../contact_me.html">Contact Me</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/akrem-gomri/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://github.com/AkremGomri" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div id="main">
+            <h1 class="rs center h1">Music Stream Forecast Project</h1>
+
+            <!-- Project Links -->
+            <section>
+                <div style="text-align: center; margin: 30px 0;">
+                    <a href="https://music-stream-forecast-ukrwopgzazcoyaruqcsrer.streamlit.app/" class="button primary" style="margin: 10px;" target="_blank">🚀 Test the Live App</a>
+                    <a href="https://github.com/AkremGomri/music-stream-forecast" class="button" style="margin: 10px;" target="_blank">💻 GitHub Repository</a>
+                    <a href="https://colab.research.google.com/drive/1XG_FTA8m5sVqWvcB0jMfyjl1KWLXSPDM?create=true" class="button" style="margin: 10px;" target="_blank">🔬 Colab Notebook</a>
+                </div>
+            </section>
+
+            <!-- Project Context -->
+            <section>
+                <h2 class="rs h2">Project Context:</h2>
+                <!-- El charika : <a class="B" href="https://dibsteur.com/" target="_blank" rel="noopener noreferrer">Dibsteur</a> -->
+                <p>A leading digital music distribution platform (name withheld for privacy) launched an artificial intelligence development seminar aimed at building AI-based solutions capable of identifying promising music artists. The company seeks to sign artists who:</p>
+                <ul>
+                    <li>Will generate enough future streams to be profitable, which translates to annual streams above 500 thousands.</li>
+                    <li>But not too many, so they do not attract major labels and investors, which translates to annual streams below 20 millions.</li>
+                </ul>
+                <p><span class="B">Target Range:</span> 500K - 20M annual streams<br>
+                <em>Fewer than 500K = too risky | More than 20M = too competitive</em></p>
+            </section>
+
+            <!-- Data Source -->
+            <section>
+                <h2 class="rs h2">Data Source:</h2>
+                <p>We utilized the <span class="B"><a href="https://app.viberate.com/home/">Viberate</a> private API</span> to automatically gather data for thousands of artists. Our focus was exclusively on Spotify data (amongst many other music plateforms gathered from Viberate) due to its richness and relevance in the music streaming ecosystem.</p>
+                
+                <p>
+                    <span class="B">Data Input:</span> Streams Weekly — selected for its relevance to this approach.<br>
+                    Other features, such as Streams Monthly, Followers Weekly & Monthly, Listeners Weekly & Monthly, Streams/Listeners Ratio, Listeners/Followers Ratio, and Artist Popularity Score (calculated by Spotify), exist but are excluded here as they were deemed less relevant.
+                </p>
+            </section>
+
+            <!-- Approach -->
+            <section>
+                <h2 class="rs h2">My Approach:</h2>
+                <p>The goal is to estimate or predict annual revenues in terms of streams to cover the company's investment costs. Therefore, the target variable is the number of streams an artist is most likely to generate in the next year.</p>
+                
+                <p>By analyzing the data patterns, we observed that if an artist's streams remain generally steady, they are likely to continue at a similar level in the future. However, if an artist's streams fluctuate significantly, prediction becomes more challenging.</p>
+                
+                <p>Our approach is to forecast the number of streams and determine whether it falls within a desired annual range. This requires a robust model capable of capturing streaming trends while providing a confidence interval—quantifying uncertainty and estimating, for example, an 80% probability that the streams will fall within a certain range. This method leverages both the artist’s historical data and data from similar artists, creating a statistical and probabilistic framework.</p>
+                
+                <h3>What’s Different from the Previous Approach</h3>
+                <p>Traditionally, the company relies on <strong>human analysts</strong> to examine <strong>historical data</strong>—especially data from the last year—to decide whether to sign a contract with an artist.</p>
+                
+                <p>The new approach uses <strong>Artificial Intelligence</strong> to forecast the number of streams an artist is expected to generate in the following year. The AI considers trends and fluctuations in historical data but focuses on <strong>predicted streams for the next year</strong> rather than past data alone. This results in predictions that better reflect reality and support improved decision-making.</p>
+            </section>
+
+            <!-- Technical Approach -->
+            <section>
+                <h2 class="rs h2">Technical Approach:</h2>
+                <ol>
+                    <li><span class="B">Foundation Model Fine-tuning:</span> Utilized TimeGPT, a transformer-based foundation model ranking top 3 in time series benchmarks, we fine-tune it on music streaming data.</li>
+                    <li><span class="B">Risk Assessment Framework:</span> Developed tiered evaluation system based on where forecasted annual streams and confidence bounds fall within target range.</li>
+                    <li><span class="B">Web Application Development:</span> Built interactive Streamlit application for real-time artist analysis and investment recommendations. you can try it for free <a href="https://music-stream-forecast-ukrwopgzazcoyaruqcsrer.streamlit.app/" style="margin: 10px;" target="_blank">🚀 Test the Live App for free</a>.</li>
+                </ol>
+            </section>
+
+            <!-- Results -->
+            <section>
+                <h2 class="rs h2">Results:</h2>
+
+                <div class="image-grid">
+                    <figure>
+                        <img src="../images/project music artist/streams_artist_forecast_tendency2.png" alt="Image 3">
+                        <figcaption><strong>Figure 1:</strong> Steady Tendency with variance</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="../images/project music artist/realstk.png" alt="Image 2">
+                        <figcaption><strong>Figure 2:</strong> Steady Tendency</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="../images/project music artist/streams_artist_forecast_increasing.png" alt="Image 5">
+                        <figcaption><strong>Figure 3:</strong> Increasing Trend</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="../images/project music artist/streams_artist_forecast_peaks.png" alt="Image 1">
+                        <figcaption><strong>Figure 4:</strong> Peaks</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="../images/project music artist/Decreasing.png" alt="Image 4">
+                        <figcaption><strong>Figure 5:</strong> Decreasing Trend</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="../images/project music artist/slight decrease.png" alt="Image 6">
+                        <figcaption><strong>Figure 6:</strong> Steady With High Variance</figcaption>
+                    </figure>
+                </div>
+                <div class="article-content">
+                    <h3>Interpretation of the resuts</h3>
+                    <ul>
+                        <li>
+                            <span class="B">Captures Steady Behaviour:</span> 
+                            <strong>Figure 1</strong> and <strong>Figure 2</strong> show how the model identifies a steady overall trend while also representing variability (signal flactuation) through wider or narrower confidence intervals.
+                        </li></br>
+
+                        <li>
+                            <span class="B">Increasing Trends:</span> 
+                            <strong>Figure 3</strong> and <strong>Figure 4</strong> illustrate the model’s ability to forecast upward trends in streaming data.  
+                            They also highlight the influence of peaks: recent peaks (Figure 4) have a stronger impact than older ones (Figure 3).
+                        </li></br>
+
+                        <li>
+                            <span class="B">Decreasing Trend:</span> 
+                            <strong>Figure 5</strong> and <strong>Figure 6</strong> show how the model successfully detects downward trends.  
+                            This is something a human analyst might easily overlook—especially in Figure 6—if relying only on raw historical data.
+                        </li>
+                    </ul>
+
+                    <!-- <p>
+                        <strong>Figure 1</strong> and <strong>Figure 2</strong> illustrate the most common pattern in our dataset: a generally steady stream behaviour where the mean seasonal value fluctuates only slightly. 
+                        The model successfully captures this stability and projects it into the future. It also learns the variance of the historical data, which is reflected by a wide confidence interval in <strong>Figure 1</strong> and a much narrower one in <strong>Figure 2</strong> for about 85% of the cases. 
+                        A tighter interval indicates higher model confidence and lower variability, which is desirable.
+                    </p>
+
+                    <p>
+                        Increasing trends are shown in <strong>Figure 3</strong> and <strong>Figure 4</strong>, while <strong>Figure 5</strong> presents a decreasing trend. 
+                        The model effectively captures the most recent and dominant trend—even when it is subtle—something that could be easily overlooked by human judgement if we relied solely on the past year of raw data. 
+                        Additionally, <strong>Figure 4</strong> reproduces a recent peak, whereas <strong>Figure 3</strong> does not. This difference arises from how far in the past the peak occurred: the more recent the pattern, the stronger its influence on the forecast.
+                    </p> -->
+
+                    <!-- <p>
+                        Longer-term variations are captured in <strong>Figure 2</strong> and <strong>Figure 3</strong>, which both show different
+                        forms of tendency evolution. These figures demonstrate the model’s ability to distinguish between steady growth,
+                        plateau phases, or mild fluctuations in listener engagement.
+                    </p> -->
+<!-- sharp peaks in streaming activity indicate sudden bursts of visibility,
+                        often caused by playlist placements or viral exposure -->
+                    <!-- <p>
+                        A declining performance pattern is visible in <strong>Figure 3</strong>, suggesting a progressive loss of audience
+                        interest. Conversely, a clear upward trajectory is presented in <strong>Figure 4</strong>, representing artists whose
+                        popularity is gaining traction and who may be strong candidates for future signing.
+                    </p>
+
+                    <p>
+                        Finally, <strong>Figure 5</strong> illustrates an unstable signal with significant variance, showing that while the artist
+                        experiences regular exposure, the engagement is inconsistent—an important indicator when evaluating long-term potential.
+                    </p> -->
+                </div>
+                
+            </section>
+
+
+            <!-- Results Analysis -->
+            <section>
+                <h2 class="rs h2">Action and Recommendations:</h2>
+
+                <div class="single-figure">
+                    <figure>
+                        <img src="../images/project music artist/2b-frank-success.png" alt="Image 7">
+                        <figcaption><strong>Figure 7:</strong> Recommendation for artist “2bfrank”</figcaption>
+                    </figure>
+                </div>
+
+                <p>
+                    In the example shown in <strong>Figure 7</strong>, the artist <em>2bfrank</em> (whose forecast corresponds to <strong>Figure 1</strong>) 
+                    is projected to reach approximately <strong>2.9 million streams</strong> in the coming year.  
+                    The model estimates a <strong>90% confidence interval</strong> between <strong>1.4 million</strong> streams (worst-case scenario) 
+                    and <strong>4.3 million</strong> streams (best-case scenario).<br><br>
+
+                    Because both bounds fall within our strategic target range of <strong>500K to 20M streams</strong>, this artist is classified as a 
+                    <span class="B">🟢 High-Confidence Deal</span>.  
+                    We therefore recommend moving forward with the investment, as the projected performance meets profitability expectations while 
+                    limiting competitive risk.<br><br>
+
+                    Other artists, such as <em>pbdr</em> (<strong>Figure 5</strong>) and <em>swee-people</em> (<strong>Figure 3</strong>), also fall within this category.  
+                    The remaining artists do not qualify, as their lower or upper bounds lie outside the target range—or, in some cases, both.
+                </p>
+
+                <p>
+                    This methodology enables data-driven investment decisions based on probabilistic forecasts, ensuring that resources are 
+                    allocated to artists with the highest likelihood of achieving the desired streaming performance.
+                </p>
+            </section>
+
+            <!-- Evaluation Framework -->
+            <section>
+                <h2 class="rs h2">Investment Evaluation Framework:</h2>
+                <ul>
+                    <li><span class="B">🟢 High Confidence Deal:</span> Both lower and upper confidence bounds within target range [500K, 20M]</li>
+                    <li><span class="B">🟡 Growth Potential Deal:</span> Upper bound within range, but lower bound below 500K (higher risk, potential upside)</li>
+                    <li><span class="B">🔵 Competitive Premium Deal:</span> Lower bound within range, but upper bound above 20M (safe floor, but expect competition)</li>
+                    <li><span class="B">🔴 Outside Target Range:</span> Both confidence bounds outside desired range (doesn't fit investment strategy)</li>
+                </ul>
+            </section>
+
+            <!-- Key Features -->
+            <section>
+                <h2 class="rs h2">Key Application Features:</h2>
+                <ul>
+                    <li><span class="B">Interactive Artist Selection:</span> Searchable dropdown with thousands of artists from the Viberate database</li>
+                    <li><span class="B">Historical Data Visualization:</span> Interactive Plotly charts showing streaming history and trends</li>
+                    <li><span class="B">Customizable Forecasting:</span> Adjustable prediction horizon (4-52 weeks) and confidence levels</li>
+                    <li><span class="B">Real-time Risk Assessment:</span> Immediate investment recommendations with detailed justification</li>
+                    <li><span class="B">Uncertainty Quantification:</span> Confidence interval analysis</li>
+                    <li><span class="B">Data Export:</span> Download forecast results for further analysis</li>
+                </ul>
+            </section>
+
+            <!-- Technical Architecture -->
+            <section>
+                <h2 class="rs h2">Technical Architecture:</h2>
+                <ul>
+                    <li><span class="B">Frontend:</span> Streamlit web framework for interactive user interface</li>
+                    <li><span class="B">AI/ML Core:</span> TimeGPT foundation transformer-based model from Nixtla for time series forecasting</li>
+                    <li><span class="B">Data Processing:</span> Pandas for data manipulation and analysis</li>
+                    <li><span class="B">Visualization:</span> Plotly for interactive charts and graphs</li>
+                    <li><span class="B">Data Source:</span> Viberate API for artist streaming data</li>
+                    <li><span class="B">Deployment:</span> Streamlit Community Cloud with automatic GitHub integration</li>
+                    <li><span class="B">Development:</span> Google Colab for model training and data analysis</li>
+                </ul>
+            </section>
+
+            <!-- Project Impact -->
+            <section>
+                <h2 class="rs h2">Project Impact:</h2>
+                <ul>
+                    <li><span class="B">Business Value:</span> Enables data-driven artist investment decisions, reducing risk and maximizing ROI</li>
+                    <li><span class="B">Technical Innovation:</span> Successfully applied foundation model fine-tuning to music industry forecasting</li>
+                    <li><span class="B">Scalability:</span> Architecture supports thousands of artists with real-time analysis capabilities</li>
+                    <li><span class="B">Accessibility:</span> Web-based interface makes advanced AI forecasting accessible to non-technical users</li>
+                </ul>
+            </section>
+
+            <!-- Tools and Technologies -->
+            <section>
+                <h2 class="rs h2">Tools and Technologies:</h2>
+                <ul>
+                    <li><span class="B">Programming Languages:</span> Python</li>
+                    <li><span class="B">Web Framework:</span> Streamlit</li>
+                    <li><span class="B">AI/ML Libraries:</span> Nixtla TimeGPT, Pandas, Plotly</li>
+                    <li><span class="B">APIs:</span> Viberate Music API</li>
+                    <li><span class="B">Development Environment:</span> Google Colab, Jupyter Notebooks</li>
+                    <li><span class="B">Version Control & Deployment:</span> GitHub, Streamlit Community Cloud</li>
+                    <li><span class="B">Data Formats:</span> JSON, CSV</li>
+                </ul>
+            </section>
+
+            <!-- Project Links (Bottom) -->
+            <section>
+                <div style="text-align: center; margin: 40px 0;">
+                    <p>Explore the live application and source code:</p>
+                    <a href="https://music-stream-forecast-ukrwopgzazcoyaruqcsrer.streamlit.app/" class="button primary" style="margin: 10px;" target="_blank">🚀 Test the Live App</a>
+                    <a href="https://github.com/AkremGomri/music-stream-forecast" class="button" style="margin: 10px;" target="_blank">💻 GitHub Repository</a>
+                    <a href="https://colab.research.google.com/drive/1XG_FTA8m5sVqWvcB0jMfyjl1KWLXSPDM?create=true" class="button" style="margin: 10px;" target="_blank">🔬 Colab Notebook</a>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

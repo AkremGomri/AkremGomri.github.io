@@ -1,0 +1,54 @@
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px; /* smaller gap so images feel larger */
+  width: 100%;
+  max-width: 1200px; /* adjust or remove as needed */
+  margin: auto;
+}
+
+.image-grid figure {
+  margin: 10px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+  border-radius: 6px;
+}
+
+.image-grid figcaption {
+  text-align: center;
+  font-size: 0.7rem;
+  margin-top: -6px;
+  color: #555;
+}
+
+.article-content {
+  margin: 80px 40px;
+}
+
+.single-figure {
+    max-width: 900px;      /* Adjust width */
+    margin: 20px auto;     /* Center horizontally */
+    margin-bottom: 5%;
+    padding: 12px;
+    border-radius: 12px;
+    background: #f8f8f8;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.single-figure img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    object-fit: cover;
+}
+
+.single-figure figcaption {
+    margin-top: 8px;
+    font-size: 0.95rem;
+    color: #555;
+}
