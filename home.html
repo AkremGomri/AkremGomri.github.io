@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Akrem Gomri's Personal Website</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/home.css">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Akrem GOMRI<br />
+						Personal Website</h1>
+						<p>
+							Data Scientist with a focus on Deep Learning <a href="https://github.com/AkremGomri">@AkremGomri</a>
+						</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Akrem Personal Website</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="home.html">Home</a></li>
+							<li><a href="education.html">Education</a></li>
+							<li><a href="experience.html">Experience</a></li>
+							<li><a href="projects.html">Projects</a></li>
+							<li><a href="certifications.html">Certifications</a></li>
+							<li><a href="resume.html">Resume</a></li>
+							<li><a href="contact me.html">ِContact me</a></li>
+							<!-- <li><a href="DrillX.html">test</a></li> -->
+						</ul>
+						<ul class="icons">
+							<!-- <li><a href="https://huggingface.co/AkremGomri" class="icon brands fas fa-smile"><i class="fas fa-smile" ></i></a></li> -->
+							<li><a href="https://www.linkedin.com/in/akrem-gomri/" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
+							<li><a href="https://github.com/AkremGomri" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<h2 class="section-header" class="cntr">Welcome video</h2>
+						<div class="cntr">
+							<video src="assets/files/Personal website explanation.mp4" controls poster="images/welcome.jpeg" width="70%"></video>
+						</div>
+						<div style="background-color: #ffeb3b; color: #000; padding: 10px 15px; border-left: 5px solid #fbc02d; margin-bottom: 20px; font-weight: bold;">
+							⚠️ Note: The welcome video was recorded while I was pursuing my Master’s degree in AI. I have now completed it.
+						</div>
+
+						<h2 class="section-header">General information</h2>
+						<div class="grid">
+
+						<span class="bold grid-left-side">🤵 My name :</span> <span class="grid-right-side"> Akrem Gomri </span>
+
+						<span class="bold grid-left-side">🎂 My birthdate :</span> <span class="grid-right-side" id="birthdate"> 13 April 1999 (<span id="age"></span> years old) </span>
+
+						<span class="bold grid-left-side">⚒️ Currently :</span> <span class="grid-right-side">Seeking a full-time position in Data Science / AI </span>
+
+						<span class="bold grid-left-side">🎓 Education :</span> <span class="grid-right-side">Master’s degree in Artificial Intelligence</span>
+
+							<!-- <span class="bold grid-left-side">🧑‍💻 Skills :</span> <span class="grid-right-side">  Software development and Artificial intelligence </span> -->
+
+						</div>
+							<footer>
+								last update : 08 Jan 2026
+							</footer>
+
+					</div>
+
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<!-- <ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul> -->
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+		 <script>
+			// Calculate age from birthdate
+			const birthDate = new Date("1999-04-13");
+			const today = new Date();
+			let age = today.getFullYear() - birthDate.getFullYear();
+			const monthDiff = today.getMonth() - birthDate.getMonth();
+			const dayDiff = today.getDate() - birthDate.getDate();
+			
+			// Adjust age if birthday hasn't occurred yet this year
+			if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
+				age--;
+			}
+			
+			document.getElementById("age").textContent = age;
+		</script>
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
